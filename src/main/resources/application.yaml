@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: search-engine
+
+swaggerBaseUrl: ${SWAGGER_BASE_URL:localhost:${server.port}}
