@@ -36,8 +36,8 @@ public class SkuRepository {
 
 	private SearchQuery buildQuery(String skuText) {
 		return new NativeSearchQueryBuilder()
-				//.withQuery(new QueryStringQueryBuilder(skuText))
-				.withFilter(regexpQuery("id", ".*" + skuText + ".*"))
+				.withQuery(new QueryStringQueryBuilder(skuText))
+				//.withFilter(regexpQuery("id", ".*" + skuText + ".*"))
 				.build();
 	}
 }
